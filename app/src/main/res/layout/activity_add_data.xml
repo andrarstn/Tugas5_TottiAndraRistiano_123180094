@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddDataActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tf_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Name">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine|textCapSentences"
+            android:textSize="14sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tf_age"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tf_name"
+        android:layout_marginTop="16dp"
+        android:hint="Age">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_age"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSize="14sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tf_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tf_age"
+        android:layout_marginTop="16dp"
+        android:hint="Number">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/et_number"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textSize="14sp" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tf_number"
+        android:layout_marginTop="14dp"
+        android:text="Position"
+        android:textColor="@color/black"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/rg_position"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView2">
+        <RadioButton
+            android:id="@+id/position_pg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Point Guard" />
+        <RadioButton
+            android:id="@+id/position_sg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Shooting Guard" />
+        <RadioButton
+            android:id="@+id/position_pf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Power Forward" />
+        <RadioButton
+            android:id="@+id/position_sf"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Small Forward" />
+        <RadioButton
+            android:id="@+id/position_c"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Center" />
+    </RadioGroup>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnSave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="16dp"
+        android:text="Save"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white" />
+</RelativeLayout>
