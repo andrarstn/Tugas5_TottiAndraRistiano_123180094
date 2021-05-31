@@ -108,13 +108,13 @@ public class AddDataActivity extends AppCompatActivity {
                 binding.etAge.setText(String.valueOf(age));
                 binding.etNumber.setText(String.valueOf(number));
 
-                if (position == "PG"){
+                if (position.equals("PG")){
                     binding.positionPg.setChecked(true);
-                }else if (position == "SG"){
+                }else if (position.equals("SG")){
                     binding.positionSg.setChecked(true);
-                }else if (position == "PF"){
+                }else if (position.equals("PF")){
                     binding.positionPf.setChecked(true);
-                }else if (position == "SF"){
+                }else if (position.equals("SF")){
                     binding.positionSf.setChecked(true);
                 }else {
                     binding.positionC.setChecked(true);
